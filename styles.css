@@ -1,0 +1,167 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+:root {
+    --primary-blue: #1992d4;
+    --background-blue: #e2e8f0;
+    --accent-yellow: #f0b429;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15fr 85fr;
+}
+
+#sidebar {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    z-index: 1;
+    box-shadow: 4px 0px 12px -12px black;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-right: 28px;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+#logo-container #logo {
+    font-size: 48px;
+}
+
+.links {
+    list-style: none;
+    padding: 0px;
+    margin: 52px 20px;
+}
+
+.links > li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.links > li > .small-icon {
+    width: 48px;
+    text-align: center;
+}
+
+#content {
+    display: grid;
+    grid-template-rows: min-content;
+}
+
+#header {
+    box-shadow: 0px 4px 12px -12px;
+    z-index: 1;
+}
+
+#header > .header-div {
+    display: flex;
+    padding: 16px 40px;
+    gap: 20px;
+}
+
+#search-container {
+    display: flex;
+    flex-basis: 720px;
+    gap: 12px;
+    align-items: center;
+    margin-right: auto;
+}
+
+#search-bar {
+    width: 100%;
+    min-width: 160px;
+    padding: 12px;
+    height: 32px;
+    border: none;
+    border-radius: 32px;
+    background-color: var(--background-blue);
+    font-size: 1.6rem;
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-pic {
+    background-color: var(--accent-yellow);
+    border-radius: 50%;
+}
+
+.profile-pic.small {
+    height: 48px;
+    width: 48px;
+}
+
+.profile-pic.large {
+    height: 72px;
+    width: 72px;
+}
+
+.name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.grid-container {
+    display: grid;
+    align-content: center;
+    margin-right: auto;
+}
+
+.greeting.small {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.greeting.large {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#action-button-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.action-button {
+    padding: 8px 28px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--primary-blue);
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.action-button:hover {
+    cursor: pointer;
+}
+
+#main-content {
+    background-color: var(--background-blue);
+}
